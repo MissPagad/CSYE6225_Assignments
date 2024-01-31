@@ -1,4 +1,4 @@
-const { apiDatabaseConnection } = require('../config/dbConnection');
+import { apiDatabaseConnection } from '../config/dbConnection.js';
 
 //setting header with required params
 const healthCheck = async (req, res) => {
@@ -27,5 +27,5 @@ const healthCheck = async (req, res) => {
     }
 };
 
-module.exports = { healthCheck };
+export { healthCheck };
 
